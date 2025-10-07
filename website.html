@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acme · Modern Responsive Template</title>
+  <meta name="description" content="Clean, responsive HTML website template — hero, features, CTA, and contact form." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">A</div>
+        <div>
+          <div style="font-weight:800">Acme</div>
+          <div class="small muted">Design • Build • Launch</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <button class="cta-btn">Get started</button>
+      </nav>
+
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="toggleNav()">☰</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Beautifully simple website template — ready to customize</h1>
+          <p class="lead">A minimal, responsive starting point for landing pages, product sites, and portfolios. Clean code, accessible markup, and a lightweight JS spritz for interactivity.</p>
+
+          <div class="features">
+            <div class="feature">Responsive</div>
+            <div class="feature">Accessible</div>
+            <div class="feature">No frameworks</div>
+          </div>
+
+          <div style="margin-top:18px">
+            <a href="#contact" class="cta-btn">Work with us</a>
+          </div>
+
+          <div style="margin-top:28px; color:var(--muted); font-size:14px">
+            <strong>Use:</strong> copy this file and edit the content or styles. Replace the logo, tweak colors in :root, and you're off.
+          </div>
+        </div>
+
+        <aside class="card">
+          <h3 style="margin-top:0">Quick stats</h3>
+          <div style="display:flex;justify-content:space-between;gap:8px;margin-top:12px">
+            <div style="flex:1">
+              <div class="small muted">Visitors / mo</div>
+              <div style="font-weight:800;font-size:20px">12,430</div>
+            </div>
+            <div style="flex:1">
+              <div class="small muted">Conversion</div>
+              <div style="font-weight:800;font-size:20px">4.8%</div>
+            </div>
+          </div>
+
+          <div style="margin-top:14px">
+            <div class="small muted">Recent feedback</div>
+            <blockquote style="margin:8px 0 0;padding-left:10px;border-left:3px solid rgba(255,255,255,0.03);color:var(--muted)">"Sleek, fast, and easy to adapt."</blockquote>
+          </div>
+        </aside>
+      </section>
+
+      <section id="features" class="wrap">
+        <h2 style="margin-top:6px">Features</h2>
+        <div class="grid">
+          <div class="item">
+            <h3 style="margin:0 0 8px">Fast & lightweight</h3>
+            <p class="muted small">No heavy frameworks — pure HTML, CSS, and a tiny JS file for interactivity.</p>
+          </div>
+
+          <div class="item">
+            <h3 style="margin:0 0 8px">Accessible</h3>
+            <p class="muted small">Semantic markup and clear focus states make this template friendly for screen readers.</p>
+          </div>
+
+          <div class="item">
+            <h3 style="margin:0 0 8px">Customizable</h3>
+            <p class="muted small">Adjust color variables, spacing, and fonts in the :root to match your brand.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta card">
+        <div>
+          <h3 style="margin:0">Ready to ship your site?</h3>
+          <div class="muted small">Start with this template and launch in minutes.</div>
+        </div>
+        <div>
+          <button class="cta-btn">Get the design</button>
+        </div>
+      </section>
+
+      <section id="contact" class="card">
+        <h3>Contact</h3>
+        <form onsubmit="submitForm(event)">
+          <div class="row">
+            <div style="flex:1">
+              <label for="name">Name</label>
+              <input id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div style="flex:1">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@company.com" required />
+            </div>
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="How can we help?" required></textarea>
+          </div>
+
+          <div style="display:flex;gap:8px;align-items:center;margin-top:6px">
+            <button type="submit" class="cta-btn">Send message</button>
+            <div class="small muted">We'll reply within 2 business days.</div>
+          </div>
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="wrap">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div class="small muted">© <span id="year"></span> Acme. All rights reserved.</div>
+        <div class="small muted">Made with ♥ • <a href="#" style="color:var(--accent);text-decoration:none">Privacy</a> • <a href="#" style="color:var(--accent);text-decoration:none">Terms</a></div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
